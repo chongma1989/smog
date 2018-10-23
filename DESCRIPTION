@@ -1,0 +1,23 @@
+Package: smog
+Type: Package
+Title: Structural Modeling by using Overlapped Group Penalty
+Version: 1.0
+Date: 2018-10-12
+Author: Chong Ma, Shuangge Ma, Ray Liu, Kevin Galinsky
+Maintainer: Chong Ma <chong.ma@yale.edu>
+Description: This R package fits a linear non-penalized phynotype (demographic) variables 
+    and penalized groups of prognostic effect and predictive effect, by satisfying such
+    hierarchy structures that if a predictive effect exists, its prognostic effect must 
+    also exist. This package can deal with continuous, binomial or multinomial, and survival
+    response variables, underlying the assumption of Gaussian, binomial (multinomial), and 
+    cox proportional hazard models, respectively. It is implemented by combining the iterative
+    shrinkage-thresholding algorithm (ISTA) and the alternating direction method of multipliers
+    algorithms (ADMM). The main method is built in C++, and the complementary methods are
+    written in R. 
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.18), coxed, foreach, doParallel
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-10-23 22:50:10 UTC; chongma
