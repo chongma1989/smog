@@ -8,6 +8,9 @@ This R package fits a linear non-penalized phynotype (demographic) variables and
 * Download the zip file `smog_1.0.tar.gz`.
 * In R console, run `install.packages("smog_1.0.tar.gz",repos=NULL,type="source")`. 
 
+# smog
+Structural Modeling by using Overlapped Group Penalty
+======================================================
 
 ## Installation
 ```r
